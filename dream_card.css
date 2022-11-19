@@ -1,0 +1,70 @@
+* {
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+
+body {
+    height: 100vh;
+    display: flex;
+    animation-name: colorChange;
+    background-image: linear-gradient(to right, #0b74b0, #75479c, #bd3861);
+    animation-duration: 3s;
+    animation-iteration-count: infinite;
+    animation-delay: 3s;
+}
+
+@keyframes colorChange {
+    20% {
+        background-image: linear-gradient( to right, rgb(236, 219, 62), rgb(71, 209, 145), rgb(89, 209, 42));
+    }
+    45% {
+        background-image: linear-gradient( to right, rgb(209, 128, 51), rgb(83, 168, 156), rgb(130, 172, 130));
+    }
+    80% {
+        background-image: linear-gradient( to right, rgba(70, 47, 201, 0.767), rgb(163, 94, 94), rgb(184, 153, 168));
+    }
+}
+
+.goal-game {
+    display: flex;
+    flex-wrap: wrap;
+    height: 640px;
+    margin: auto;
+    perspective: 1000px;
+    width: 640px;
+}
+
+.front-side {
+    transform: rotateY(180deg);
+}
+
+.front-side,
+.back-side {
+    width: 100%;
+    height: 100%;
+    padding: 20px;
+    position: absolute;
+    border-radius: 15px;
+    background: #fcfafab6;
+    backface-visibility: hidden;
+}
+
+.dream-card {
+    width: calc(25% - 10px);
+    height: calc(33.333% - 10px);
+    margin: 5px;
+    position: relative;
+    transform: scale(1);
+    transform-style: preserve-3d;
+    transition: transform 0.7s;
+}
+
+.dream-card:active {
+    transform: scale(0.97);
+    transition: transform 0.2s;
+}
+
+.dream-card.flip {
+    transform: rotateY(180deg);
+}
