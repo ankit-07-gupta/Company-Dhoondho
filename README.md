@@ -1,5 +1,5 @@
 # Company-Dhoondho Project
-I've developed a Company Dhoondo!! Card Game . Animation Coloring Effects are applied in background which
+I've developed a Company Dhoondho!! Card Game . Animation Coloring Effects are applied in background which
 gets changed after particular interval of time.
 
 
