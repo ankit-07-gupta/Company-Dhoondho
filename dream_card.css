@@ -16,13 +16,13 @@ body {
 
 @keyframes colorChange {
     20% {
-        background-image: linear-gradient( to right, rgb(236, 219, 62), rgb(71, 209, 145), rgb(89, 209, 42));
+        background-image: linear-gradient( to right, rgb(245, 221, 10), rgb(53, 143, 101), rgb(113, 192, 82));
     }
     45% {
-        background-image: linear-gradient( to right, rgb(209, 128, 51), rgb(83, 168, 156), rgb(130, 172, 130));
+        background-image: linear-gradient( to right, rgb(235, 118, 10), rgb(44, 170, 40), rgb(108, 96, 163));
     }
     80% {
-        background-image: linear-gradient( to right, rgba(70, 47, 201, 0.767), rgb(163, 94, 94), rgb(184, 153, 168));
+        background-image: linear-gradient( to right, rgba(46, 13, 233, 0.767), rgb(129, 46, 46), rgb(132, 160, 81));
     }
 }
 
@@ -67,4 +67,39 @@ body {
 
 .dream-card.flip {
     transform: rotateY(180deg);
+}
+
+#button1 {
+    background-color: linear-gradient(to right, #0b74b0, #75479c, #bd3861);
+    height: 50px;
+    position: absolute;
+    z-index: +3;
+}
+
+p,
+#timer {
+    font-weight: bolder;
+    font-size: 30px;
+    background-color: transparent;
+    margin-left: 90px;
+}
+
+p {
+    margin-bottom: 5px;
+}
+
+#timer {
+    font-size: 20px;
+    padding: 10px;
+    margin-top: 20px;
+    border-radius: 50px;
+}
+
+#timer:hover {
+    background-color: lightgoldenrodyellow;
+    cursor: pointer;
+}
+
+#testTimer {
+    margin-top: 20px;
 }
